@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: sudo -S <<< "Ubun2@L0gin" cat /etc/shadow
+      shell: sudo -S -k <<< "Ubun2@L0gin" cat /etc/shadow
       become: yes
       register: hosts
 
