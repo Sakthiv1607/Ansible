@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: top
+      shell: export TERM=xterm; top -b -n 1
       become: yes
       register: hosts
 
