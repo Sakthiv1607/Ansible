@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: echo "Ubun2@L0gin" | sudo -S echo "127.0.0.1 www.youtube.com" | sudo tee -a /etc/hosts
+      shell: sed '$d' /etc/hosts
       become: yes
       register: hosts
 
