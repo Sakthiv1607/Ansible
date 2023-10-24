@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: sed '$d' /etc/hosts
+      shell: echo "Ubun2@L0gin" | sudo -S sed '$d' /etc/hosts
       become: yes
       register: hosts
 
