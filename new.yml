@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: export TERM=xterm; top -b -n 1
+      shell: uptime
       become: yes
       register: hosts
 
