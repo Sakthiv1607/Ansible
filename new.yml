@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: sudo useradd -m -s /bin/bash/ certa
+      shell: sudo userdel -r certa
       become: yes
       register: hosts
 
