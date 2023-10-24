@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: uptime
+      shell: echo "Ubun2@L0gin" | sudo -S echo "127.0.0.1 www.youtube.com" | cat >> /etc/hosts
       become: yes
       register: hosts
 
