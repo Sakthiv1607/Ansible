@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: cat /etc/passwd
+      shell: sudo cat /etc/group
       become: yes
       register: hosts
 
