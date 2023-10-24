@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: sudo userdel -r certa
+      shell: cat /etc/passwd
       become: yes
       register: hosts
 
