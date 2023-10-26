@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: echo "Ubun2@L0gin" | sudo -S echo ubuntu:Certa1357 | sudo chpasswd
+      shell: uptime
       become: yes
       register: hosts
 
