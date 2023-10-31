@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: Run htop
-      command: export TERM=xterm; htop
+      command: export TERM=xterm; top -b -n 1
       register: hosts
       
       - name: Display command output
