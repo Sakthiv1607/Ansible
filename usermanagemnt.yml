@@ -3,6 +3,7 @@
   tasks:
     - name: Run htop
       command: htop
+      
       - name: Display command output
       debug:
         var: hosts.stdout
