@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: sudo apt update -y && apt upgrade -y
+      shell: echo "Ubun2@L0gin" | sudo -S apt update
       become: yes
       register: hosts
 
