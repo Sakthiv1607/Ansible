@@ -1,5 +1,5 @@
 ---
-- hosts: your_target_host
+- hosts: all
   tasks:
     - name: Run htop
       command: htop
