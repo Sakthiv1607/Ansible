@@ -1,12 +1,3 @@
----
-- name: Run Ubuntu Terminal Commands
-  hosts: all
-  tasks:
-    - name: Run a command
-      shell: echo "Ubun2@L0gin" | sudo -S cat /etc/shadow
-      become: yes
-      register: hosts
-
-    - name: Display command output
-      debug:
-        var: hosts.stdout
+shell_command:
+  run_htop:
+    command: htop
