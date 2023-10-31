@@ -3,6 +3,7 @@
   tasks:
     - name: Run htop
       command: htop
+      register: hosts
       
       - name: Display command output
       debug:
