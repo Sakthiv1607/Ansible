@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: echo "Ubun2@L0gin" | sudo -S apt update
+      shell: echo "Ubun2@L0gin" | sudo -S apt update -y
       become: yes
       register: hosts
 
