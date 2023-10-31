@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: Run a command
-      shell: sudo cat /etc/shadow
+      shell: echo "Ubun2@L0gin" | sudo -S apt install vim
       become: yes
       register: hosts
 
