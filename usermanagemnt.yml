@@ -1,6 +1,6 @@
 ---
 - name: Run Ubuntu Terminal Commands
-  hosts: all
+  hosts: 192.168.1.14
   tasks:
     - name: Run a command
       shell: echo "Ubun2@L0gin" | sudo -S uptime
